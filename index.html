@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujit Bera | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:#3b82f655;
+filter:blur(120px);
+top:-150px;
+left:-150px;
+z-index:-2;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:#8b5cf655;
+filter:blur(120px);
+bottom:-150px;
+right:-150px;
+z-index:-2;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(15,23,42,.65);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#60a5fa;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#60a5fa;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:0 8%;
+}
+
+.hero-content{
+display:grid;
+grid-template-columns:1fr 350px;
+gap:60px;
+align-items:center;
+width:100%;
+max-width:1200px;
+}
+
+.hero h1{
+font-size:58px;
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#60a5fa;
+}
+
+.hero h3{
+font-weight:400;
+color:#cbd5e1;
+margin-bottom:25px;
+}
+
+.hero p{
+color:#94a3b8;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+}
+
+.btn{
+padding:14px 28px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+transition:.35s;
+}
+
+.primary{
+background:#3b82f6;
+color:white;
+}
+
+.primary:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(59,130,246,.4);
+}
+
+.secondary{
+border:1px solid #3b82f6;
+color:white;
+}
+
+.secondary:hover{
+background:#3b82f6;
+}
+
+.profile-card{
+background:rgba(255,255,255,.08);
+padding:35px;
+border-radius:25px;
+text-align:center;
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.1);
+}
+
+.profile-image{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+display:block;
+margin:auto;
+margin-bottom:20px;
+border:5px solid rgba(255,255,255,.15);
+box-shadow:0 20px 40px rgba(59,130,246,.35);
+transition:.4s;
+}
+
+.profile-image:hover{
+transform:scale(1.05);
+box-shadow:0 25px 50px rgba(59,130,246,.55);
+}
+
+section{
+padding:90px 8%;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+font-size:40px;
+margin-bottom:40px;
+text-align:center;
+color:#60a5fa;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.06);
+padding:28px;
+border-radius:18px;
+transition:.35s;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:rgba(255,255,255,.09);
+}
+
+.card h3{
+margin-bottom:12px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+}
+
+.skill{
+padding:12px 20px;
+background:#1e293b;
+border-radius:30px;
+}
+
+footer{
+padding:50px;
+text-align:center;
+color:#94a3b8;
+}
+
+@media(max-width:900px){
+
+.hero-content{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.buttons{
+justify-content:center;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.profile-card{
+max-width:350px;
+margin:auto;
+}
+
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">Sujit Bera</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div>
+
+<h1>Hi, I'm <span>Sujit Bera</span></h1>
+
+<h3>Software Developer • Full Stack Enthusiast • Problem Solver</h3>
+
+<p>
+Passionate about building scalable applications, creating beautiful user
+interfaces, and learning modern technologies. I enjoy turning ideas into
+real-world digital products.
+</p>
+
+<div class="buttons">
+
+<a href="#contact" class="btn primary">Contact Me</a>
+
+<a href="https://in.linkedin.com/in/sujit-bera-041088295" target="_blank" class="btn secondary">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+<div class="profile-card">
+
+<img src="profile.jpg" alt="Sujit Bera" class="profile-image">
+
+<h2>Sujit Bera</h2>
+
+<p style="margin-top:10px;color:#cbd5e1;">
+Software Developer
+</p>
+
+<p style="margin-top:20px;color:#94a3b8;">
+Available for internships, freelance, and full-time opportunities.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+
+<p>
+I am passionate about software development and continuously improving my
+skills in web technologies, backend systems, databases, and cloud-based
+applications. I enjoy solving challenging problems while creating elegant,
+user-friendly solutions.
+</p>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Project One</h3>
+<p>Describe your project here.</p>
+</div>
+
+<div class="card">
+<h3>Project Two</h3>
+<p>Describe your project here.</p>
+</div>
+
+<div class="card">
+<h3>Project Three</h3>
+<p>Describe your project here.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+<div class="skill">Express</div>
+<div class="skill">MongoDB</div>
+<div class="skill">MySQL</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card" style="text-align:center;">
+
+<h3>Let's Connect</h3>
+
+<p style="margin:20px 0;color:#94a3b8;">
+Feel free to reach out for collaborations, internships, freelance work, or
+technical discussions.
+</p>
+
+<a class="btn primary" href="https://in.linkedin.com/in/sujit-bera-041088295" target="_blank">
+Connect on LinkedIn
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Sujit Bera • Built with HTML & CSS
+
+</footer>
+
+</body>
+</html>
